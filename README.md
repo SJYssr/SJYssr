@@ -27,7 +27,7 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 <!---
 [暗色](https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake-dark.svg)
 [亮色](https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake.svg)
