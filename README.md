@@ -23,6 +23,15 @@
   </a>
 </div>
 
+###
+
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<!---
+[暗色](https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake-dark.svg)
+[亮色](https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake.svg)
+--->
 
 - 普通的一个编程爱好者
 - ·python
@@ -31,7 +40,7 @@
 - ·JavaScript
 - ·C
 - 更多的正在学习中😊
-English is not very good
+English is not very good,
 Now I'm a college student
 thk!!x3 :>
 
