@@ -17,6 +17,12 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
+###
+<div align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=7bf763&width=435&lines=欢迎光临SJYssr！&center=true&size=27" alt="Typing SVG" />
+  </a>
+</div>
+
 
 - 普通的一个编程爱好者
 - ·python
