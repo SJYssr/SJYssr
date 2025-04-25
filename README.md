@@ -39,6 +39,8 @@
 - ·HTML
 - ·JavaScript
 - ·C
+- ·JavaEE
+- ·Vue
 - 更多的正在学习中😊
 English is not very good,
 Now I'm a college student
