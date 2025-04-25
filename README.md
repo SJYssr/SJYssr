@@ -19,7 +19,7 @@
 
 ###
 <div align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=7bf763&width=435&lines=欢迎光临SJYssr！&center=true&size=27" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=7bf763&width=435&lines=Welcome to SJYssr😊&center=true&size=27" alt="Typing SVG" />
   </a>
 </div>
 
@@ -33,7 +33,9 @@
 [亮色](https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake.svg)
 --->
 
-- 普通的一个编程爱好者
+###
+# About me
+- A common programming enthusiast
 - ·python
 - ·Java
 - ·HTML
@@ -41,10 +43,14 @@
 - ·C
 - ·JavaEE
 - ·Vue
-- 更多的正在学习中😊
-English is not very good,
-Now I'm a college student
-thk!!x3 :>
+- More are still learning 😊
+### English is not very good,Now I'm a college student,thk!!x3 :>
+### ❤️If you think my project is useful to you, please don't hesitate to give me a Star、Fork、Follow.❤️
+## Have you find any BUGs or have good ideas?🧐
+### you can leave a message in Issues (I will check it as soon as I have time).
+### If you want to get an answer or solve the problem quickly, you can give me a appreciation.
+## Appreciation
+![img](https://github.com/SJYssr/img/raw/main/1/zanshang.jpg)
 
 <!---
 SJYssr/SJYssr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
