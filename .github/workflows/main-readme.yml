@@ -2,46 +2,33 @@ name: 更新自述文件
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"  # 每12小时运行一次
+  workflow_dispatch:  # 允许手动触发
+  push:
+    branches:
+      - main
+
 permissions:
   contents: write
-  pull-requests: write
+
 jobs:
-
-  wakatime:
-    name: 使用 Wakatime Metrics 更新自述文件
+  generate:
+    name: Generate Snake and Stats
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHOW_OS: "False"
-          SHOW_PROJECTS: "False"
-          SHOW_LINES_OF_CODE: "False"
-          SHOW_DAYS_OF_WEEK: "True"
-          SHOW_TIMEZONE: "False"
-          SHOW_COMMIT: "False"
-          SHOW_EDITORS: "True"
-          SHOW_LANGUAGE_PER_REPO: "False"
-          SHOW_SHORT_INFO: "True"
-          SHOW_LOC_CHART: "False"
-          SHOW_PROFILE_VIEWS: "False"
-          SHOW_TOTAL_CODE_TIME: "False"
-
-  snake:
-    name: Generate Snake
-    runs-on: ubuntu-latest
-    steps:
+      # 生成蛇形动画
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # 推送蛇形动画到输出分支
       - name: push snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v2.6.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
@@ -49,30 +36,34 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   verify:
-    name: 验证公共仓库中所有提交的签名
+    name: 验证提交签名
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: 安装依赖项
-      run: |
-        python -m pip install --upgrade pip requests
-    - name: 运行 python 脚本
-      env:
-        GH_USER: ${{ github.repository_owner }}
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        python3 signature-verifier.py
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          
+      - name: 安装依赖项
+        run: |
+          python -m pip install --upgrade pip requests
+          
+      - name: 运行验证脚本
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 signature-verifier.py
 
   rerun-failed-jobs:
-      runs-on: ubuntu-latest
-      needs: [ wakatime, snake, verify ]
-      if: failure()
-      steps:
-        - name: 在当前工作流程中重新运行失败的作业
-          env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: gh run rerun ${{ github.run_id }} --failed
+    name: 重试失败的任务
+    runs-on: ubuntu-latest
+    needs: [generate, verify]
+    if: failure()
+    steps:
+      - name: 重新运行失败的工作流
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh run rerun ${{ github.run_id }} --failed
