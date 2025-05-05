@@ -2,18 +2,20 @@
   <h1>👋 Welcome to SJYssr's Profile</h1>
   
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+SJYssr%F0%9F%98%8A" alt="Typing SVG" />
+  
+  <p>Last updated: <img src="https://img.shields.io/github/last-commit/SJYssr/SJYssr?label=Last%20Update&style=flat" alt="Last Update" /></p>
 </div>
 
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits" alt="Profile Stats" />
+  <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits" alt="Profile Stats" onerror="this.src='https://img.shields.io/badge/Profile-Stats-blue'" />
   
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=false&locale=en&short_numbers=false" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=false&locale=en&short_numbers=false" alt="GitHub Streak" onerror="this.src='https://img.shields.io/badge/Streak-Stats-green'" />
   
-  <img src="https://github-readme-stats.vercel.app/api?username=SJYssr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=false" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=SJYssr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=false" height="150" alt="stats graph" onerror="this.src='https://img.shields.io/badge/Stats-Graph-yellow'" />
   
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=true" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=true" height="150" alt="languages graph" onerror="this.src='https://img.shields.io/badge/Languages-Graph-red'" />
 </div>
 
 
@@ -56,6 +58,7 @@
     <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-0%20commits-yellow" alt="Two Weeks Ago" />
   </div>
 </div>
+
 ## 🐍 Contribution Graph
 
 <div align="center">
