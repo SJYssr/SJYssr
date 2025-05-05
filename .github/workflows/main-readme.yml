@@ -15,35 +15,6 @@ permissions:
   pull-requests: write
 
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # 获取完整的提交历史
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install PyGithub
-
-      - name: Generate stats
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python .github/generate-stats.py
-
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "📊 Update commit statistics"
-          branch: main
-          file_pattern: README.md
-
   generate-stats:
     name: Generate Commit Statistics
     runs-on: ubuntu-latest
@@ -77,7 +48,7 @@ jobs:
           git add README.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update commit statistics" && git push)
 
-  generate:
+  generate-snake:
     name: Generate Snake and Stats
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -136,7 +107,7 @@ jobs:
   rerun-failed-jobs:
     name: 重试失败的任务
     runs-on: ubuntu-latest
-    needs: [generate, verify, generate-stats]
+    needs: [generate-stats, generate-snake, verify]
     if: failure()
     steps:
       - name: 检查失败原因
