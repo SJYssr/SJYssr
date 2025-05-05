@@ -6,6 +6,7 @@
 import requests
 import os
 import concurrent.futures
+from datetime import datetime, timedelta
 
 USER = os.environ["GH_USER"]
 TOKEN = os.environ["GH_TOKEN"]
@@ -173,5 +174,58 @@ def main():
         print("End of Report", file=fh)
 
 
+def get_commits():
+    # 获取过去30天的提交
+    since = (datetime.now() - timedelta(days=30)).isoformat()
+    url = f"https://api.github.com/search/commits?q=author:{USER}+committer-date:>{since}"
+    
+    response = requests.get(url, headers={
+        "Authorization": f"Bearer {TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    })
+    if response.status_code != 200:
+        print(f"Error fetching commits: {response.status_code}")
+        return []
+    
+    commits = response.json()["items"]
+    return commits
+
+
+def verify_signatures():
+    commits = get_commits()
+    unsigned_commits = []
+    
+    for commit in commits:
+        # 获取提交的详细信息
+        commit_url = commit["url"]
+        response = requests.get(commit_url, headers={
+            "Authorization": f"Bearer {TOKEN}",
+            "Accept": "application/vnd.github.v3+json"
+        })
+        
+        if response.status_code != 200:
+            print(f"Error fetching commit details: {response.status_code}")
+            continue
+        
+        commit_data = response.json()
+        
+        # 检查提交是否已签名
+        if not commit_data.get("verification", {}).get("verified", False):
+            unsigned_commits.append({
+                "sha": commit["sha"][:7],
+                "date": commit["commit"]["committer"]["date"],
+                "message": commit["commit"]["message"]
+            })
+    
+    # 输出结果
+    if unsigned_commits:
+        print("\n未签名的提交:")
+        for commit in unsigned_commits:
+            print(f"- {commit['sha']} ({commit['date']}): {commit['message']}")
+    else:
+        print("\n✅ 所有提交都已正确签名!")
+
+
 if __name__ == "__main__":
     main()
+    verify_signatures()

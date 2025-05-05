@@ -70,7 +70,7 @@ jobs:
         GH_USER: ${{ github.repository_owner }}
         GH_TOKEN: ${{ github.token }}
       run: |
-        python3 signature-verifier.py
+        python3 .github/signature-verifier.py
 
   commit-stats:
     name: Update Commit Statistics
@@ -103,7 +103,7 @@ jobs:
 
   rerun-failed-jobs:
       runs-on: ubuntu-latest
-      needs: [ wakatime, snake, verify, commit-stats ]
+      needs: [ verify, commit-stats ]
       if: failure()
       steps:
         - name: Rerun Failed Jobs
