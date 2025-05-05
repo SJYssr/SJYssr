@@ -33,89 +33,23 @@
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 600px; margin: 0 auto;">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Monday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 53.3%; height: 100%; background: #2196F3; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">16 (53.3%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Tuesday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 20.0%; height: 100%; background: #4CAF50; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">6 (20.0%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Wednesday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 10.0%; height: 100%; background: #FFC107; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">3 (10.0%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Thursday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 0.0%; height: 100%; background: #F44336; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">0 (0.0%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Friday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 16.7%; height: 100%; background: #9C27B0; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">5 (16.7%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Saturday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 0.0%; height: 100%; background: #FF9800; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">0 (0.0%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 100px;">Sunday</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 0.0%; height: 100%; background: #607D8B; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">0 (0.0%)</span>
-    </div>
-  </div>
+  <pre>
+Monday      ████████████████████████████████████████████████████████████ 16 (53.3%)
+Tuesday     ████████████████████████ 6 (20.0%)
+Wednesday   ████████████ 3 (10.0%)
+Thursday    █ 0 (0.0%)
+Friday      ████████████████████████████ 5 (16.7%)
+Saturday    █ 0 (0.0%)
+Sunday      █ 0 (0.0%)
+  </pre>
   
   <h4>Time Period Distribution</h4>
-  <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 600px; margin: 0 auto;">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 150px;">Morning (6:00-12:00)</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 10.0%; height: 100%; background: #2196F3; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">3 (10.0%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 150px;">Afternoon (12:00-18:00)</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 36.7%; height: 100%; background: #4CAF50; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">11 (36.7%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 150px;">Evening (18:00-24:00)</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 46.7%; height: 100%; background: #FFC107; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">14 (46.7%)</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="width: 150px;">Night (0:00-6:00)</span>
-      <div style="flex: 1; height: 8px; background: #e0e0e0; border-radius: 4px;">
-        <div style="width: 6.7%; height: 100%; background: #F44336; border-radius: 4px;"></div>
-      </div>
-      <span style="width: 100px; text-align: right;">2 (6.7%)</span>
-    </div>
-  </div>
+  <pre>
+Morning (6:00-12:00)     ████████████ 3 (10.0%)
+Afternoon (12:00-18:00)  ████████████████████████████████████████████ 11 (36.7%)
+Evening (18:00-24:00)    ████████████████████████████████████████████████████████ 14 (46.7%)
+Night (0:00-6:00)        ████████ 2 (6.7%)
+  </pre>
   
   <h4>Weekly Trend</h4>
   <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
