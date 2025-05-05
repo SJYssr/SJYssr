@@ -56,7 +56,7 @@ try:
     time_period_percentages = {k: (v/total_commits*100) for k, v in time_period_stats.items()}
 
     # 生成进度条
-    def generate_progress_bar(percentage, length=30):
+    def generate_progress_bar(percentage, length=20):
         filled = int(percentage * length / 100)
         return '█' * filled + '░' * (length - filled)
 
@@ -75,8 +75,8 @@ try:
         percentage = weekday_percentages[i]
         progress_bar = generate_progress_bar(percentage)
         weekday_section += f'  <tr>\n'
-        weekday_section += f'    <td style="width: 100px;">{day}</td>\n'
-        weekday_section += f'    <td style="width: 300px;">{progress_bar}</td>\n'
+        weekday_section += f'    <td style="width: 80px;">{day}</td>\n'
+        weekday_section += f'    <td style="width: 200px;">{progress_bar}</td>\n'
         weekday_section += f'    <td style="text-align: right;">{count} ({percentage:.1f}%)</td>\n'
         weekday_section += f'  </tr>\n'
     weekday_section += '</table>'
@@ -94,8 +94,8 @@ try:
         percentage = time_period_percentages[period]
         progress_bar = generate_progress_bar(percentage)
         time_period_section += f'  <tr>\n'
-        time_period_section += f'    <td style="width: 150px;">{time_period_names[period]}</td>\n'
-        time_period_section += f'    <td style="width: 300px;">{progress_bar}</td>\n'
+        time_period_section += f'    <td style="width: 120px;">{time_period_names[period]}</td>\n'
+        time_period_section += f'    <td style="width: 200px;">{progress_bar}</td>\n'
         time_period_section += f'    <td style="text-align: right;">{count} ({percentage:.1f}%)</td>\n'
         time_period_section += f'  </tr>\n'
     time_period_section += '</table>'
