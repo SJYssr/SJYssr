@@ -16,6 +16,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=true" height="150" alt="languages graph" />
 </div>
 
+
 ## 📈 Commit Statistics
 
 <div align="center">
@@ -24,49 +25,37 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SJYssr&theme=github-compact" alt="Activity Graph" />
   
   <p>
-    <img src="https://img.shields.io/badge/Total%20Commits-0-orange" alt="Total Commits" />
-    <img src="https://img.shields.io/badge/Daily%20Average-0.0-blue" alt="Daily Average" />
-    <img src="https://img.shields.io/badge/Most%20Active-Morning-green" alt="Most Active Time" />
+    <img src="https://img.shields.io/badge/Total%20Commits-26-orange" alt="Total Commits" />
+    <img src="https://img.shields.io/badge/Daily%20Average-6.5-blue" alt="Daily Average" />
+    <img src="https://img.shields.io/badge/Most%20Active-Afternoon-green" alt="Most Active Time" />
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <p>
-    <img src="https://img.shields.io/badge/Monday-0%25-blue" alt="Monday" />
-    <img src="https://img.shields.io/badge/Tuesday-0%25-green" alt="Tuesday" />
-    <img src="https://img.shields.io/badge/Wednesday-0%25-yellow" alt="Wednesday" />
-    <img src="https://img.shields.io/badge/Thursday-0%25-red" alt="Thursday" />
-    <img src="https://img.shields.io/badge/Friday-0%25-purple" alt="Friday" />
-    <img src="https://img.shields.io/badge/Saturday-0%25-orange" alt="Saturday" />
-    <img src="https://img.shields.io/badge/Sunday-0%25-lightgrey" alt="Sunday" />
-  </p>
-  
-  <h4>Daily Distribution Chart</h4>
-  <p>
-    <img src="https://progress-bar.dev/0?title=Monday" alt="Monday" />
-    <img src="https://progress-bar.dev/0?title=Tuesday" alt="Tuesday" />
-    <img src="https://progress-bar.dev/0?title=Wednesday" alt="Wednesday" />
-    <img src="https://progress-bar.dev/0?title=Thursday" alt="Thursday" />
-    <img src="https://progress-bar.dev/0?title=Friday" alt="Friday" />
-    <img src="https://progress-bar.dev/0?title=Saturday" alt="Saturday" />
-    <img src="https://progress-bar.dev/0?title=Sunday" alt="Sunday" />
-  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/Monday-12%20commits%20(46.2%25)-blue" alt="Monday" />
+    <img src="https://img.shields.io/badge/Tuesday-6%20commits%20(23.1%25)-green" alt="Tuesday" />
+    <img src="https://img.shields.io/badge/Wednesday-3%20commits%20(11.5%25)-yellow" alt="Wednesday" />
+    <img src="https://img.shields.io/badge/Thursday-0%20commits%20(0.0%25)-red" alt="Thursday" />
+    <img src="https://img.shields.io/badge/Friday-5%20commits%20(19.2%25)-purple" alt="Friday" />
+    <img src="https://img.shields.io/badge/Saturday-0%20commits%20(0.0%25)-orange" alt="Saturday" />
+    <img src="https://img.shields.io/badge/Sunday-0%20commits%20(0.0%25)-lightgrey" alt="Sunday" />
+  </div>
   
   <h4>Time Period Distribution</h4>
-  <p>
-    <img src="https://progress-bar.dev/0?title=Morning" alt="Morning" />
-    <img src="https://progress-bar.dev/0?title=Afternoon" alt="Afternoon" />
-    <img src="https://progress-bar.dev/0?title=Evening" alt="Evening" />
-    <img src="https://progress-bar.dev/0?title=Night" alt="Night" />
-  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/Morning%20(6:00-12:00)-3%20commits-blue" alt="Morning" />
+    <img src="https://img.shields.io/badge/Afternoon%20(12:00-18:00)-11%20commits-green" alt="Afternoon" />
+    <img src="https://img.shields.io/badge/Evening%20(18:00-24:00)-10%20commits-yellow" alt="Evening" />
+    <img src="https://img.shields.io/badge/Night%20(0:00-6:00)-2%20commits-red" alt="Night" />
+  </div>
   
   <h4>Weekly Trend</h4>
-  <p>
-    <img src="https://progress-bar.dev/0?title=This%20Week" alt="This Week" />
-    <img src="https://progress-bar.dev/0?title=Last%20Week" alt="Last Week" />
-    <img src="https://progress-bar.dev/0?title=Two%20Weeks%20Ago" alt="Two Weeks Ago" />
-  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/This%20Week-12%20commits-blue" alt="This Week" />
+    <img src="https://img.shields.io/badge/Last%20Week-14%20commits-green" alt="Last Week" />
+    <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-0%20commits-yellow" alt="Two Weeks Ago" />
+  </div>
 </div>
-
 ## 🐍 Contribution Graph
 
 <div align="center">
