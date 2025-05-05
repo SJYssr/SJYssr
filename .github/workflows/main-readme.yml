@@ -14,7 +14,6 @@ permissions:
   contents: write
   pull-requests: write
   actions: read
-  metadata: read
 
 jobs:
   generate-stats:
@@ -24,7 +23,6 @@ jobs:
       contents: write
       pull-requests: write
       actions: read
-      metadata: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -63,7 +61,6 @@ jobs:
       contents: write
       pull-requests: write
       actions: read
-      metadata: read
     steps:
       # 生成蛇形动画
       - name: generate snake.svg
@@ -90,7 +87,6 @@ jobs:
       contents: write
       pull-requests: write
       actions: read
-      metadata: read
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -130,7 +126,6 @@ jobs:
       contents: write
       pull-requests: write
       actions: read
-      metadata: read
     steps:
       - name: 检查失败原因
         run: |
