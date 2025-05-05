@@ -16,10 +16,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=true" height="150" alt="languages graph" />
 </div>
 
-
-
-
-
 ## 📈 Commit Statistics
 
 <div align="center">
@@ -46,10 +42,10 @@
   
   <h4>Time Period Distribution</h4>
   <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-    <img src="https://img.shields.io/badge/Morning%20(6:00-12:00)-3%20commits-blue" alt="Morning" />
-    <img src="https://img.shields.io/badge/Afternoon%20(12:00-18:00)-11%20commits-green" alt="Afternoon" />
-    <img src="https://img.shields.io/badge/Evening%20(18:00-24:00)-14%20commits-yellow" alt="Evening" />
-    <img src="https://img.shields.io/badge/Night%20(0:00-6:00)-2%20commits-red" alt="Night" />
+    <img src="https://img.shields.io/badge/Morning%20(6:00--12:00)-3%20commits-blue" alt="Morning" />
+    <img src="https://img.shields.io/badge/Afternoon%20(12:00--18:00)-11%20commits-green" alt="Afternoon" />
+    <img src="https://img.shields.io/badge/Evening%20(18:00--24:00)-14%20commits-yellow" alt="Evening" />
+    <img src="https://img.shields.io/badge/Night%20(0:00--6:00)-2%20commits-red" alt="Night" />
   </div>
   
   <h4>Weekly Trend</h4>
@@ -59,6 +55,7 @@
     <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-0%20commits-yellow" alt="Two Weeks Ago" />
   </div>
 </div>
+
 ## 🐍 Contribution Graph
 
 <div align="center">
