@@ -4,8 +4,14 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
 permissions:
   contents: write
+  pull-requests: write
+
 jobs:
 
   wakatime:
@@ -71,6 +77,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
@@ -91,7 +99,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md
           git commit -m "Update commit statistics" || exit 0
-          git push
+          git push origin HEAD:${{ github.ref }}
 
   rerun-failed-jobs:
       runs-on: ubuntu-latest
