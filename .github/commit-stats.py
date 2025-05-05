@@ -118,40 +118,62 @@ def update_readme(stats):
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <p>
-    <img src="https://img.shields.io/badge/Monday-{stats['weekday_percentages']['Monday']:.1f}%25-blue" alt="Monday" />
-    <img src="https://img.shields.io/badge/Tuesday-{stats['weekday_percentages']['Tuesday']:.1f}%25-green" alt="Tuesday" />
-    <img src="https://img.shields.io/badge/Wednesday-{stats['weekday_percentages']['Wednesday']:.1f}%25-yellow" alt="Wednesday" />
-    <img src="https://img.shields.io/badge/Thursday-{stats['weekday_percentages']['Thursday']:.1f}%25-red" alt="Thursday" />
-    <img src="https://img.shields.io/badge/Friday-{stats['weekday_percentages']['Friday']:.1f}%25-purple" alt="Friday" />
-    <img src="https://img.shields.io/badge/Saturday-{stats['weekday_percentages']['Saturday']:.1f}%25-orange" alt="Saturday" />
-    <img src="https://img.shields.io/badge/Sunday-{stats['weekday_percentages']['Sunday']:.1f}%25-lightgrey" alt="Sunday" />
-  </p>
-  
-  <h4>Daily Distribution Chart</h4>
-  <p>
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Monday'])}?title=Monday" alt="Monday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Tuesday'])}?title=Tuesday" alt="Tuesday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Wednesday'])}?title=Wednesday" alt="Wednesday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Thursday'])}?title=Thursday" alt="Thursday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Friday'])}?title=Friday" alt="Friday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Saturday'])}?title=Saturday" alt="Saturday" />
-    <img src="https://progress-bar.dev/{int(stats['weekday_percentages']['Sunday'])}?title=Sunday" alt="Sunday" />
-  </p>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Commits</th>
+      <th>Percentage</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>{stats['weekday_commits'][0]}</td>
+      <td>{stats['weekday_percentages']['Monday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>{stats['weekday_commits'][1]}</td>
+      <td>{stats['weekday_percentages']['Tuesday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>{stats['weekday_commits'][2]}</td>
+      <td>{stats['weekday_percentages']['Wednesday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>{stats['weekday_commits'][3]}</td>
+      <td>{stats['weekday_percentages']['Thursday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>{stats['weekday_commits'][4]}</td>
+      <td>{stats['weekday_percentages']['Friday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>{stats['weekday_commits'][5]}</td>
+      <td>{stats['weekday_percentages']['Saturday']:.1f}%</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>{stats['weekday_commits'][6]}</td>
+      <td>{stats['weekday_percentages']['Sunday']:.1f}%</td>
+    </tr>
+  </table>
   
   <h4>Time Period Distribution</h4>
   <p>
-    <img src="https://progress-bar.dev/{int(stats['time_periods']['morning']/stats['total_commits']*100)}?title=Morning" alt="Morning" />
-    <img src="https://progress-bar.dev/{int(stats['time_periods']['afternoon']/stats['total_commits']*100)}?title=Afternoon" alt="Afternoon" />
-    <img src="https://progress-bar.dev/{int(stats['time_periods']['evening']/stats['total_commits']*100)}?title=Evening" alt="Evening" />
-    <img src="https://progress-bar.dev/{int(stats['time_periods']['night']/stats['total_commits']*100)}?title=Night" alt="Night" />
+    <img src="https://img.shields.io/badge/Morning-{stats['time_periods']['morning']}-blue" alt="Morning" />
+    <img src="https://img.shields.io/badge/Afternoon-{stats['time_periods']['afternoon']}-green" alt="Afternoon" />
+    <img src="https://img.shields.io/badge/Evening-{stats['time_periods']['evening']}-yellow" alt="Evening" />
+    <img src="https://img.shields.io/badge/Night-{stats['time_periods']['night']}-red" alt="Night" />
   </p>
   
   <h4>Weekly Trend</h4>
   <p>
-    <img src="https://progress-bar.dev/{int(stats['weekly_trend'][-1]/max(stats['weekly_trend'])*100)}?title=This%20Week" alt="This Week" />
-    <img src="https://progress-bar.dev/{int(stats['weekly_trend'][-2]/max(stats['weekly_trend'])*100)}?title=Last%20Week" alt="Last Week" />
-    <img src="https://progress-bar.dev/{int(stats['weekly_trend'][-3]/max(stats['weekly_trend'])*100)}?title=Two%20Weeks%20Ago" alt="Two Weeks Ago" />
+    <img src="https://img.shields.io/badge/This%20Week-{stats['weekly_trend'][-1]}-blue" alt="This Week" />
+    <img src="https://img.shields.io/badge/Last%20Week-{stats['weekly_trend'][-2]}-green" alt="Last Week" />
+    <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-{stats['weekly_trend'][-3]}-yellow" alt="Two Weeks Ago" />
   </p>
 </div>
 """
