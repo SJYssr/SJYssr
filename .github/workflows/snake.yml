@@ -1,4 +1,4 @@
-name: generate animation
+name: 生成动画
 
 on:
   # run automatically every 12 hours
