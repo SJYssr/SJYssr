@@ -84,26 +84,30 @@
     
     <div>
       <h4 style="color: #58A6FF; margin: 5px 0;">⏰ Time Period Distribution</h4>
-      <table style="border-collapse: collapse; width: 100%; max-width: 400px; margin: 0 auto; background-color: #161B22;">
+      <table style="border-collapse: collapse; width: 100%; max-width: 400px; margin: 0 auto; background-color: #161B22; font-size: 14px;">
         <tr>
-          <td style="width: 120px; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Morning (6:00-12:00)</td>
-          <td style="width: 200px; padding: 5px; border: 1px solid #30363d;">████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
+          <td style="width: 100px; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Morning</td>
+          <td style="width: 150px; padding: 4px; border: 1px solid #30363d; color: #58A6FF;">6:00-12:00</td>
+          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;">████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Afternoon (12:00-18:00)</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">████████████████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">11 (36.7%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Afternoon</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">12:00-18:00</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">████████████████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">11 (36.7%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Evening (18:00-24:00)</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">████████████████████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">14 (46.7%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Evening</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">18:00-24:00</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">████████████████████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">14 (46.7%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Night (0:00-6:00)</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">2 (6.7%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Night</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">0:00-6:00</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">2 (6.7%)</td>
         </tr>
       </table>
     </div>
