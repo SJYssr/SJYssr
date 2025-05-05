@@ -44,7 +44,7 @@ time_period_percentages = {k: (v/total_commits*100) for k, v in time_period_stat
 # 生成进度条
 def generate_progress_bar(percentage, length=30):
     filled = int(percentage * length / 100)
-    return '⬜' * filled + '⬛' * (length - filled)
+    return '█' * filled + '░' * (length - filled)
 
 # 读取 README.md
 with open('README.md', 'r', encoding='utf-8') as f:
@@ -52,17 +52,13 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 # 更新每日提交分布部分
 weekday_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-weekday_section = '<div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">\n'
+weekday_section = '<pre>\n'
 for i, day in enumerate(weekday_names):
     count = weekday_stats[i]
     percentage = weekday_percentages[i]
     progress_bar = generate_progress_bar(percentage)
-    weekday_section += f'<div style="display: flex; align-items: center; gap: 10px;">\n'
-    weekday_section += f'  <span style="width: 100px;">{day}</span>\n'
-    weekday_section += f'  <span style="flex: 1;">{progress_bar}</span>\n'
-    weekday_section += f'  <span style="width: 100px; text-align: right;">{count} ({percentage:.1f}%)</span>\n'
-    weekday_section += '</div>\n'
-weekday_section += '</div>'
+    weekday_section += f'{day:<12} {progress_bar} {count:>2} ({percentage:>5.1f}%)\n'
+weekday_section += '</pre>'
 
 # 更新时间段分布部分
 time_period_names = {
@@ -71,17 +67,13 @@ time_period_names = {
     'evening': 'Evening (18:00-24:00)',
     'night': 'Night (0:00-6:00)'
 }
-time_period_section = '<div style="display: flex; flex-direction: column; gap: 5px; margin: 10px 0;">\n'
+time_period_section = '<pre>\n'
 for period in ['morning', 'afternoon', 'evening', 'night']:
     count = time_period_stats[period]
     percentage = time_period_percentages[period]
     progress_bar = generate_progress_bar(percentage)
-    time_period_section += '<div style="display: flex; align-items: center; gap: 10px;">\n'
-    time_period_section += f'  <span style="width: 150px;">{time_period_names[period]}</span>\n'
-    time_period_section += f'  <span style="flex: 1;">{progress_bar}</span>\n'
-    time_period_section += f'  <span style="width: 100px; text-align: right;">{count} ({percentage:.1f}%)</span>\n'
-    time_period_section += '</div>\n'
-time_period_section += '</div>'
+    time_period_section += f'{time_period_names[period]:<20} {progress_bar} {count:>2} ({percentage:>5.1f}%)\n'
+time_period_section += '</pre>'
 
 # 替换 README.md 中的相应部分
 content = content.replace(
