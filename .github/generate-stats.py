@@ -15,18 +15,36 @@ try:
         log_error("GitHub token not found in environment variables")
     
     g = Github(token)
-    user = g.get_user()
+    
+    # 获取当前仓库信息
+    repo_name = os.environ.get('GITHUB_REPOSITORY')
+    if not repo_name:
+        log_error("Repository name not found in environment variables")
+    
+    repo = g.get_repo(repo_name)
+    user = repo.owner
 
     # 获取所有仓库的提交
     all_commits = []
-    for repo in user.get_repos():
-        try:
-            commits = repo.get_commits(author=user.login)
-            for commit in commits:
-                all_commits.append(commit)
-        except Exception as e:
-            print(f"::warning::Error fetching commits from {repo.name}: {str(e)}")
-            continue
+    try:
+        # 首先获取当前仓库的提交
+        commits = repo.get_commits(author=user.login)
+        for commit in commits:
+            all_commits.append(commit)
+            
+        # 然后获取用户的其他公共仓库的提交
+        for repo in user.get_repos():
+            if repo.private:
+                continue
+            try:
+                commits = repo.get_commits(author=user.login)
+                for commit in commits:
+                    all_commits.append(commit)
+            except Exception as e:
+                print(f"::warning::Error fetching commits from {repo.name}: {str(e)}")
+                continue
+    except Exception as e:
+        log_error(f"Error fetching commits: {str(e)}")
 
     if not all_commits:
         log_error("No commits found")
@@ -72,15 +90,15 @@ try:
 
     # 更新每日提交分布部分
     weekday_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    weekday_section = '<table>\n'
+    weekday_section = '<table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background-color: #161B22;">\n'
     for i, day in enumerate(weekday_names):
         count = weekday_stats[i]
         percentage = weekday_percentages[i]
         progress_bar = generate_progress_bar(percentage)
         weekday_section += f'  <tr>\n'
-        weekday_section += f'    <td style="width: 80px;">{day}</td>\n'
-        weekday_section += f'    <td style="width: 200px;">{progress_bar}</td>\n'
-        weekday_section += f'    <td style="text-align: right;">{count} ({percentage:.1f}%)</td>\n'
+        weekday_section += f'    <td style="width: 80px; padding: 8px; border: 1px solid #30363d; color: #C9D1D9;">{day}</td>\n'
+        weekday_section += f'    <td style="width: 200px; padding: 8px; border: 1px solid #30363d;">{progress_bar}</td>\n'
+        weekday_section += f'    <td style="text-align: right; padding: 8px; border: 1px solid #30363d; color: #C9D1D9;">{count} ({percentage:.1f}%)</td>\n'
         weekday_section += f'  </tr>\n'
     weekday_section += '</table>'
 
@@ -91,26 +109,26 @@ try:
         'evening': 'Evening (18:00-24:00)',
         'night': 'Night (0:00-6:00)'
     }
-    time_period_section = '<table>\n'
+    time_period_section = '<table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto; background-color: #161B22;">\n'
     for period in ['morning', 'afternoon', 'evening', 'night']:
         count = time_period_stats[period]
         percentage = time_period_percentages[period]
         progress_bar = generate_progress_bar(percentage)
         time_period_section += f'  <tr>\n'
-        time_period_section += f'    <td style="width: 120px;">{time_period_names[period]}</td>\n'
-        time_period_section += f'    <td style="width: 200px;">{progress_bar}</td>\n'
-        time_period_section += f'    <td style="text-align: right;">{count} ({percentage:.1f}%)</td>\n'
+        time_period_section += f'    <td style="width: 120px; padding: 8px; border: 1px solid #30363d; color: #C9D1D9;">{time_period_names[period]}</td>\n'
+        time_period_section += f'    <td style="width: 200px; padding: 8px; border: 1px solid #30363d;">{progress_bar}</td>\n'
+        time_period_section += f'    <td style="text-align: right; padding: 8px; border: 1px solid #30363d; color: #C9D1D9;">{count} ({percentage:.1f}%)</td>\n'
         time_period_section += f'  </tr>\n'
     time_period_section += '</table>'
 
     # 替换 README.md 中的相应部分
     content = content.replace(
-        '<h4>Daily Commit Distribution</h4>\n<table>',
-        '<h4>Daily Commit Distribution</h4>\n' + weekday_section
+        '<h4 style="color: #58A6FF;">📊 Daily Commit Distribution</h4>\n<table',
+        '<h4 style="color: #58A6FF;">📊 Daily Commit Distribution</h4>\n' + weekday_section
     )
     content = content.replace(
-        '<h4>Time Period Distribution</h4>\n<table>',
-        '<h4>Time Period Distribution</h4>\n' + time_period_section
+        '<h4 style="color: #58A6FF;">⏰ Time Period Distribution</h4>\n<table',
+        '<h4 style="color: #58A6FF;">⏰ Time Period Distribution</h4>\n' + time_period_section
     )
 
     # 写回 README.md
