@@ -2,10 +2,12 @@
 
 <div align="center">
   <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits"  />
+<a href="https://git.io/streak-stats">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=%E5%81%87&locale=zh_Hans&short_numbers=%E5%81%87" alt="GitHub Streak" />
+</a>
 </div>
 
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=%E5%81%87&locale=zh_Hans&short_numbers=%E5%81%87" alt="GitHub Streak" />
-</a>
+
 
 ###
 
