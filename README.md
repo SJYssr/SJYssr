@@ -35,18 +35,18 @@
   <h4>Daily Commit Distribution</h4>
   <table>
     <tr>
-      <td style="width: 100px;">Monday</td>
-      <td style="width: 300px;">████████████████████████████████████████████████████████████</td>
+      <td style="width: 80px;">Monday</td>
+      <td style="width: 200px;">████████████████████████</td>
       <td style="text-align: right;">16 (53.3%)</td>
     </tr>
     <tr>
       <td>Tuesday</td>
-      <td>████████████████████████</td>
+      <td>████████████████</td>
       <td style="text-align: right;">6 (20.0%)</td>
     </tr>
     <tr>
       <td>Wednesday</td>
-      <td>████████████</td>
+      <td>████████</td>
       <td style="text-align: right;">3 (10.0%)</td>
     </tr>
     <tr>
@@ -56,7 +56,7 @@
     </tr>
     <tr>
       <td>Friday</td>
-      <td>████████████████████████████</td>
+      <td>██████████████</td>
       <td style="text-align: right;">5 (16.7%)</td>
     </tr>
     <tr>
@@ -74,23 +74,23 @@
   <h4>Time Period Distribution</h4>
   <table>
     <tr>
-      <td style="width: 150px;">Morning (6:00-12:00)</td>
-      <td style="width: 300px;">████████████</td>
+      <td style="width: 120px;">Morning (6:00-12:00)</td>
+      <td style="width: 200px;">████████</td>
       <td style="text-align: right;">3 (10.0%)</td>
     </tr>
     <tr>
       <td>Afternoon (12:00-18:00)</td>
-      <td>███████████████████████████████████████████████</td>
+      <td>████████████████████</td>
       <td style="text-align: right;">11 (36.7%)</td>
     </tr>
     <tr>
       <td>Evening (18:00-24:00)</td>
-      <td>███████████████████████████████████████████████████████████</td>
+      <td>████████████████████████</td>
       <td style="text-align: right;">14 (46.7%)</td>
     </tr>
     <tr>
       <td>Night (0:00-6:00)</td>
-      <td>████████</td>
+      <td>████</td>
       <td style="text-align: right;">2 (6.7%)</td>
     </tr>
   </table>
