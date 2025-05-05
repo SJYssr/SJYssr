@@ -1,22 +1,49 @@
-name: 更新自述文件
+name: Update README
 
 on:
   schedule:
-    - cron: "0 * * * *"  # 每小时运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 * * * *'  # 每小时运行一次
   push:
-    branches:
-      - main
     paths:
       - 'README.md'
       - '.github/workflows/main-readme.yml'
       - '.github/generate-stats.py'
+  workflow_dispatch:  # 允许手动触发
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整的提交历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub
+
+      - name: Generate stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/generate-stats.py
+
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "📊 Update commit statistics"
+          branch: main
+          file_pattern: README.md
+
   generate-stats:
     name: Generate Commit Statistics
     runs-on: ubuntu-latest
