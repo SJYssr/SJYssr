@@ -33,75 +33,108 @@
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Monday: 16 commits (53.3%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 53.3%; height: 20px; background-color: #4CAF50; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Monday</span>
+        <span>16 commits (53.3%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 53.3%; height: 20px; background: #2196F3; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Tuesday: 6 commits (20.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 20.0%; height: 20px; background-color: #2196F3; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Tuesday</span>
+        <span>6 commits (20.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 20.0%; height: 20px; background: #4CAF50; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Wednesday: 3 commits (10.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 10.0%; height: 20px; background-color: #FFC107; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Wednesday</span>
+        <span>3 commits (10.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 10.0%; height: 20px; background: #FFC107; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Thursday: 0 commits (0.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 0%; height: 20px; background-color: #F44336; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Thursday</span>
+        <span>0 commits (0.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 0.0%; height: 20px; background: #F44336; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Friday: 5 commits (16.7%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 16.7%; height: 20px; background-color: #9C27B0; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Friday</span>
+        <span>5 commits (16.7%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 16.7%; height: 20px; background: #9C27B0; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Saturday: 0 commits (0.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 0%; height: 20px; background-color: #FF9800; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Saturday</span>
+        <span>0 commits (0.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 0.0%; height: 20px; background: #FF9800; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Sunday: 0 commits (0.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 0%; height: 20px; background-color: #9E9E9E; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Sunday</span>
+        <span>0 commits (0.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 0.0%; height: 20px; background: #607D8B; border-radius: 10px;"></div>
       </div>
     </div>
   </div>
   
   <h4>Time Period Distribution</h4>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Morning (6:00-12:00): 3 commits (10.0%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 10.0%; height: 20px; background-color: #2196F3; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Morning (6:00-12:00)</span>
+        <span>3 commits (10.0%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 10.0%; height: 20px; background: #2196F3; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Afternoon (12:00-18:00): 11 commits (36.7%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 36.7%; height: 20px; background-color: #4CAF50; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Afternoon (12:00-18:00)</span>
+        <span>11 commits (36.7%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 36.7%; height: 20px; background: #4CAF50; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Evening (18:00-24:00): 14 commits (46.7%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 46.7%; height: 20px; background-color: #FFC107; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Evening (18:00-24:00)</span>
+        <span>14 commits (46.7%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 46.7%; height: 20px; background: #FFC107; border-radius: 10px;"></div>
       </div>
     </div>
     <div style="width: 100%; max-width: 600px;">
-      <p style="margin: 5px 0;">Night (0:00-6:00): 2 commits (6.7%)</p>
-      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
-        <div style="width: 6.7%; height: 20px; background-color: #F44336; border-radius: 5px;"></div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+        <span>Night (0:00-6:00)</span>
+        <span>2 commits (6.7%)</span>
+      </div>
+      <div style="width: 100%; background: #e0e0e0; border-radius: 10px;">
+        <div style="width: 6.7%; height: 20px; background: #F44336; border-radius: 10px;"></div>
       </div>
     </div>
   </div>
