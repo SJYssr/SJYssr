@@ -87,6 +87,10 @@ def calculate_stats(commits):
     weeks = sorted(weekly_commits.keys())
     weekly_trend = [weekly_commits[week] for week in weeks]
     
+    # 确保至少有3周的数据
+    while len(weekly_trend) < 3:
+        weekly_trend.insert(0, 0)
+    
     return {
         "weekday_commits": weekday_commits,
         "weekday_percentages": weekday_percentages,
@@ -94,7 +98,7 @@ def calculate_stats(commits):
         "daily_average": daily_average,
         "most_active_period": most_active_period,
         "time_periods": time_periods,
-        "weekly_trend": weekly_trend
+        "weekly_trend": weekly_trend[-3:]  # 只返回最近3周的数据
     }
 
 def update_readme(stats):
@@ -118,63 +122,30 @@ def update_readme(stats):
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <table>
-    <tr>
-      <th>Day</th>
-      <th>Commits</th>
-      <th>Percentage</th>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td>{stats['weekday_commits'][0]}</td>
-      <td>{stats['weekday_percentages']['Monday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td>{stats['weekday_commits'][1]}</td>
-      <td>{stats['weekday_percentages']['Tuesday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>{stats['weekday_commits'][2]}</td>
-      <td>{stats['weekday_percentages']['Wednesday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>{stats['weekday_commits'][3]}</td>
-      <td>{stats['weekday_percentages']['Thursday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td>{stats['weekday_commits'][4]}</td>
-      <td>{stats['weekday_percentages']['Friday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td>{stats['weekday_commits'][5]}</td>
-      <td>{stats['weekday_percentages']['Saturday']:.1f}%</td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td>{stats['weekday_commits'][6]}</td>
-      <td>{stats['weekday_percentages']['Sunday']:.1f}%</td>
-    </tr>
-  </table>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/Monday-{stats['weekday_commits'][0]}%20commits%20({stats['weekday_percentages']['Monday']:.1f}%25)-blue" alt="Monday" />
+    <img src="https://img.shields.io/badge/Tuesday-{stats['weekday_commits'][1]}%20commits%20({stats['weekday_percentages']['Tuesday']:.1f}%25)-green" alt="Tuesday" />
+    <img src="https://img.shields.io/badge/Wednesday-{stats['weekday_commits'][2]}%20commits%20({stats['weekday_percentages']['Wednesday']:.1f}%25)-yellow" alt="Wednesday" />
+    <img src="https://img.shields.io/badge/Thursday-{stats['weekday_commits'][3]}%20commits%20({stats['weekday_percentages']['Thursday']:.1f}%25)-red" alt="Thursday" />
+    <img src="https://img.shields.io/badge/Friday-{stats['weekday_commits'][4]}%20commits%20({stats['weekday_percentages']['Friday']:.1f}%25)-purple" alt="Friday" />
+    <img src="https://img.shields.io/badge/Saturday-{stats['weekday_commits'][5]}%20commits%20({stats['weekday_percentages']['Saturday']:.1f}%25)-orange" alt="Saturday" />
+    <img src="https://img.shields.io/badge/Sunday-{stats['weekday_commits'][6]}%20commits%20({stats['weekday_percentages']['Sunday']:.1f}%25)-lightgrey" alt="Sunday" />
+  </div>
   
   <h4>Time Period Distribution</h4>
-  <p>
-    <img src="https://img.shields.io/badge/Morning-{stats['time_periods']['morning']}-blue" alt="Morning" />
-    <img src="https://img.shields.io/badge/Afternoon-{stats['time_periods']['afternoon']}-green" alt="Afternoon" />
-    <img src="https://img.shields.io/badge/Evening-{stats['time_periods']['evening']}-yellow" alt="Evening" />
-    <img src="https://img.shields.io/badge/Night-{stats['time_periods']['night']}-red" alt="Night" />
-  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/Morning%20(6:00-12:00)-{stats['time_periods']['morning']}%20commits-blue" alt="Morning" />
+    <img src="https://img.shields.io/badge/Afternoon%20(12:00-18:00)-{stats['time_periods']['afternoon']}%20commits-green" alt="Afternoon" />
+    <img src="https://img.shields.io/badge/Evening%20(18:00-24:00)-{stats['time_periods']['evening']}%20commits-yellow" alt="Evening" />
+    <img src="https://img.shields.io/badge/Night%20(0:00-6:00)-{stats['time_periods']['night']}%20commits-red" alt="Night" />
+  </div>
   
   <h4>Weekly Trend</h4>
-  <p>
-    <img src="https://img.shields.io/badge/This%20Week-{stats['weekly_trend'][-1]}-blue" alt="This Week" />
-    <img src="https://img.shields.io/badge/Last%20Week-{stats['weekly_trend'][-2]}-green" alt="Last Week" />
-    <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-{stats['weekly_trend'][-3]}-yellow" alt="Two Weeks Ago" />
-  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+    <img src="https://img.shields.io/badge/This%20Week-{stats['weekly_trend'][-1]}%20commits-blue" alt="This Week" />
+    <img src="https://img.shields.io/badge/Last%20Week-{stats['weekly_trend'][-2]}%20commits-green" alt="Last Week" />
+    <img src="https://img.shields.io/badge/Two%20Weeks%20Ago-{stats['weekly_trend'][-3]}%20commits-yellow" alt="Two Weeks Ago" />
+  </div>
 </div>
 """
     
