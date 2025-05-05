@@ -4,7 +4,10 @@
   <h1>👋 Welcome to SJYssr's Profile</h1>
   
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+SJYssr%F0%9F%98%8A;A+passionate+developer+%F0%9F%92%BB;Always+learning+%F0%9F%93%9A;And+improving+%F0%9F%9A%80" alt="Typing SVG" />
-  
+    <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+    <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits&theme=dark" alt="Profile Stats" onerror="this.src='https://img.shields.io/badge/Profile-Stats-blue'" />
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=false&locale=en&short_numbers=false&background=0D1117" alt="GitHub Streak" onerror="this.src='https://img.shields.io/badge/Streak-Stats-green'" />
+  </div>
   <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
     <img src="https://img.shields.io/github/last-commit/SJYssr/SJYssr?label=Last%20Update&style=for-the-badge&color=blueviolet" alt="Last Update" />
     <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
@@ -19,10 +22,7 @@
   
   <br/>
   
-  <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-    <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits&theme=dark" alt="Profile Stats" onerror="this.src='https://img.shields.io/badge/Profile-Stats-blue'" />
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=false&locale=en&short_numbers=false&background=0D1117" alt="GitHub Streak" onerror="this.src='https://img.shields.io/badge/Streak-Stats-green'" />
-  </div>
+
   
   <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
     <img src="https://github-readme-stats.vercel.app/api?username=SJYssr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&bg_color=0D1117" height="150" alt="stats graph" onerror="this.src='https://img.shields.io/badge/Stats-Graph-yellow'" />
