@@ -43,10 +43,10 @@
   
   <h4>Time Period Distribution</h4>
   <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-    <img src="https://img.shields.io/badge/Morning%20(6:00-12:00)-3%20commits-blue" alt="Morning" />
-    <img src="https://img.shields.io/badge/Afternoon%20(12:00-18:00)-11%20commits-green" alt="Afternoon" />
-    <img src="https://img.shields.io/badge/Evening%20(18:00-24:00)-14%20commits-yellow" alt="Evening" />
-    <img src="https://img.shields.io/badge/Night%20(0:00-6:00)-2%20commits-red" alt="Night" />
+    <img src="https://img.shields.io/static/v1?label=Morning&message=3%20commits&color=blue&style=flat" alt="Morning (6:00-12:00)" />
+    <img src="https://img.shields.io/static/v1?label=Afternoon&message=11%20commits&color=green&style=flat" alt="Afternoon (12:00-18:00)" />
+    <img src="https://img.shields.io/static/v1?label=Evening&message=14%20commits&color=yellow&style=flat" alt="Evening (18:00-24:00)" />
+    <img src="https://img.shields.io/static/v1?label=Night&message=2%20commits&color=red&style=flat" alt="Night (0:00-6:00)" />
   </div>
   
   <h4>Weekly Trend</h4>
