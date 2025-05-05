@@ -43,41 +43,48 @@
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 10px 0;">
     <div>
       <h4 style="color: #58A6FF; margin: 5px 0;">📊 Daily Commit Distribution</h4>
-      <table style="border-collapse: collapse; width: 100%; max-width: 400px; margin: 0 auto; background-color: #161B22;">
+      <table style="border-collapse: collapse; width: 100%; max-width: 400px; margin: 0 auto; background-color: #161B22; font-size: 14px;">
         <tr>
-          <td style="width: 80px; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Monday</td>
-          <td style="width: 200px; padding: 5px; border: 1px solid #30363d;">████████████████████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">16 (53.3%)</td>
+          <td style="width: 100px; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Monday</td>
+          <td style="width: 150px; padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Mon</td>
+          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;">████████████████████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">16 (53.3%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Tuesday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">████████████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">6 (20.0%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Tuesday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Tue</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">████████████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">6 (20.0%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Wednesday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Wednesday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Wed</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Thursday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">█</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Thursday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Thu</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Friday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">██████████████</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">5 (16.7%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Friday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Fri</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">██████████████</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">5 (16.7%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Saturday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">█</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Saturday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Sat</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">Sunday</td>
-          <td style="padding: 5px; border: 1px solid #30363d;">█</td>
-          <td style="text-align: right; padding: 5px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Sunday</td>
+          <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Sun</td>
+          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
       </table>
     </div>
