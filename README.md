@@ -33,22 +33,77 @@
   </p>
   
   <h4>Daily Commit Distribution</h4>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-    <img src="https://img.shields.io/badge/Monday-16%20commits%20(53.3%25)-blue" alt="Monday" />
-    <img src="https://img.shields.io/badge/Tuesday-6%20commits%20(20.0%25)-green" alt="Tuesday" />
-    <img src="https://img.shields.io/badge/Wednesday-3%20commits%20(10.0%25)-yellow" alt="Wednesday" />
-    <img src="https://img.shields.io/badge/Thursday-0%20commits%20(0.0%25)-red" alt="Thursday" />
-    <img src="https://img.shields.io/badge/Friday-5%20commits%20(16.7%25)-purple" alt="Friday" />
-    <img src="https://img.shields.io/badge/Saturday-0%20commits%20(0.0%25)-orange" alt="Saturday" />
-    <img src="https://img.shields.io/badge/Sunday-0%20commits%20(0.0%25)-lightgrey" alt="Sunday" />
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Monday: 16 commits (53.3%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 53.3%; height: 20px; background-color: #4CAF50; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Tuesday: 6 commits (20.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 20.0%; height: 20px; background-color: #2196F3; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Wednesday: 3 commits (10.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 10.0%; height: 20px; background-color: #FFC107; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Thursday: 0 commits (0.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 0%; height: 20px; background-color: #F44336; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Friday: 5 commits (16.7%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 16.7%; height: 20px; background-color: #9C27B0; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Saturday: 0 commits (0.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 0%; height: 20px; background-color: #FF9800; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Sunday: 0 commits (0.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 0%; height: 20px; background-color: #9E9E9E; border-radius: 5px;"></div>
+      </div>
+    </div>
   </div>
   
   <h4>Time Period Distribution</h4>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-    <img src="https://img.shields.io/static/v1?label=Morning&message=3%20commits&color=blue&style=flat" alt="Morning (6:00-12:00)" />
-    <img src="https://img.shields.io/static/v1?label=Afternoon&message=11%20commits&color=green&style=flat" alt="Afternoon (12:00-18:00)" />
-    <img src="https://img.shields.io/static/v1?label=Evening&message=14%20commits&color=yellow&style=flat" alt="Evening (18:00-24:00)" />
-    <img src="https://img.shields.io/static/v1?label=Night&message=2%20commits&color=red&style=flat" alt="Night (0:00-6:00)" />
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Morning (6:00-12:00): 3 commits (10.0%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 10.0%; height: 20px; background-color: #2196F3; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Afternoon (12:00-18:00): 11 commits (36.7%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 36.7%; height: 20px; background-color: #4CAF50; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Evening (18:00-24:00): 14 commits (46.7%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 46.7%; height: 20px; background-color: #FFC107; border-radius: 5px;"></div>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 600px;">
+      <p style="margin: 5px 0;">Night (0:00-6:00): 2 commits (6.7%)</p>
+      <div style="width: 100%; background-color: #f0f0f0; border-radius: 5px;">
+        <div style="width: 6.7%; height: 20px; background-color: #F44336; border-radius: 5px;"></div>
+      </div>
+    </div>
   </div>
   
   <h4>Weekly Trend</h4>
