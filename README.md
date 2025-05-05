@@ -4,6 +4,9 @@
   <img src="https://github-widgetbox.vercel.app/api/profile?username=SJYssr&data=followers,repositories,stars,commits"  />
 </div>
 
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=SJYssr&theme=dark&hide_border=%E5%81%87&locale=zh_Hans&short_numbers=%E5%81%87" alt="GitHub Streak" />
+</a>
+
 ###
 
 <div align="center">
@@ -18,10 +21,9 @@
 </div>
 
 ###
-<div align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=7bf763&width=435&lines=Welcome to SJYssr😊&center=true&size=27" alt="Typing SVG" />
-  </a>
-</div>
+<a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+SJYssr%F0%9F%98%8A" alt="Typing SVG" />
+</a>
 
 ###
 
