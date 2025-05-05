@@ -57,7 +57,10 @@ try:
 
     # 生成进度条
     def generate_progress_bar(percentage, length=20):
-        filled = int(percentage * length / 100)
+        # 确保百分比在0-100之间
+        percentage = max(0, min(100, percentage))
+        # 计算填充长度，四舍五入到最接近的整数
+        filled = round(percentage * length / 100)
         return '█' * filled + '░' * (length - filled)
 
     # 读取 README.md
