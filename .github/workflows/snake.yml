@@ -1,4 +1,4 @@
-name: 生成动画
+name: Generate Animation
 
 on:
   # run automatically every 12 hours
@@ -12,8 +12,6 @@ on:
   push:
     branches:
       - main
-
-
 
 jobs:
   generate:
@@ -37,4 +35,4 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}     
+          GITHUB_TOKEN: ${{ github.token }}     
