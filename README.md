@@ -47,43 +47,43 @@
         <tr>
           <td style="width: 100px; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Monday</td>
           <td style="width: 150px; padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Mon</td>
-          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;">████████████████████████</td>
+          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">16 (53.3%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Tuesday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Tue</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">████████████████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">6 (20.0%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Wednesday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Wed</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">████████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Thursday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Thu</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Friday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Fri</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">██████████████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">5 (16.7%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Saturday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Sat</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Sunday</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">Sun</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">█</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">0 (0.0%)</td>
         </tr>
       </table>
@@ -95,25 +95,25 @@
         <tr>
           <td style="width: 100px; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Morning</td>
           <td style="width: 150px; padding: 4px; border: 1px solid #30363d; color: #58A6FF;">6:00-12:00</td>
-          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;">████████</td>
+          <td style="width: 200px; padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">3 (10.0%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Afternoon</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">12:00-18:00</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">████████████████████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">11 (36.7%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Evening</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">18:00-24:00</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">████████████████████████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">14 (46.7%)</td>
         </tr>
         <tr>
           <td style="padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">Night</td>
           <td style="padding: 4px; border: 1px solid #30363d; color: #58A6FF;">0:00-6:00</td>
-          <td style="padding: 4px; border: 1px solid #30363d;">████</td>
+          <td style="padding: 4px; border: 1px solid #30363d;"><span style="color: #58A6FF;">&#9608;&#9608;&#9608;&#9608;</span></td>
           <td style="text-align: right; padding: 4px; border: 1px solid #30363d; color: #C9D1D9;">2 (6.7%)</td>
         </tr>
       </table>
