@@ -162,6 +162,7 @@
   </ul>
   
   <img src="https://github.com/SJYssr/img/raw/main/1/zanshang.jpg" alt="Appreciation" width="300" style="border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+  <p><i>Your support is the motivation that drives me to keep updating.</i></p>
 </div>
 
 <div align="center">
@@ -169,3 +170,7 @@
 </div>
 
 > Note: English is not my first language, but I'm working on improving it! Thank you for your understanding! 😊
+---
+<div align="center">
+<p>Made with ❤️ by <a href="https://github.com/SJYssr">SJYssr</a></p>
+</div>
