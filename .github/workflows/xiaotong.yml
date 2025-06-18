@@ -1,0 +1,49 @@
+name: wx天气预报推送  # 工作流名称，表示这是一个用于微信天气预报推送的工作流
+
+on:
+  schedule:  # 定时触发器，用于在特定时间自动运行工作流
+    # 启动时间，为 UTC 时间对应北京时间早9点0分
+    - cron : '03 0 * * *'  # 使用 cron 表达式，每天 UTC 时间的 00:03 对应北京时间 08:03
+    # 启动时间，为 UTC 时间对应北京时间晚上8点30分
+    - cron : '03 15 * * *'  # 使用 cron 表达式，每天 UTC 时间的 15:03 对应北京时间 23:03
+  workflow_dispatch:  # 手动触发器，允许用户通过 GitHub 界面手动触发工作流
+
+permissions:
+  contents: read  # 设置工作流的权限，这里设置为只读权限
+
+jobs:
+  build:  # 定义一个名为 build 的工作
+    runs-on: ubuntu-latest  # 指定工作运行的操作系统环境，这里使用最新的 Ubuntu
+    name: Say hello to your girlfriend every day  # 工作名称，表示每天向女朋友问好的工作
+
+    steps:  # 工作步骤
+    - name: checkout  # 步骤名称，表示检出代码
+      uses: actions/checkout@v3  # 使用 GitHub 提供的 checkout 动作，检出当前仓库的代码
+      with:
+        ref: main  # 指定检出的分支，这里使用 main 分支
+
+    - name: Set up Python 3.10  # 步骤名称，设置 Python 环境
+      uses: actions/setup-python@v3  # 使用 GitHub 提供的 setup-python 动作，设置 Python 环境
+      with:
+        python-version: "3.10"  # 指定 Python 版本为 3.10
+
+    - name: Install pip  # 步骤名称，安装 pip
+      run: |  # 运行以下命令
+        python -m pip install --upgrade pip  # 升级 pip 到最新版本
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi  # 如果存在 requirements.txt 文件，则安装其中列出的依赖
+
+    - name: Run weather  # 步骤名称，运行天气预报脚本
+      run: |  # 运行以下命令
+        python xiaotong.py  
+
+    env:  # 设置环境变量
+      APP_KEY: ${{ secrets.APP_KEY }}  # 从仓库的 secrets 中获取 APP_KEY
+      APP_ID: ${{ secrets.APP_ID }}  # 从仓库的 secrets 中获取 APP_ID
+      APP_SECRET: ${{ secrets.APP_SECRET }}  # 从仓库的 secrets 中获取 APP_SECRET
+      TEMPLATE_ID_DAY: ${{ secrets.TEMPLATE_ID_DAY }}  # 从仓库的 secrets 中获取 TEMPLATE_ID_DAY
+      TEMPLATE_ID_NIGHT: ${{ secrets.TEMPLATE_ID_NIGHT }}  # 从仓库的 secrets 中获取 TEMPLATE_ID_NIGHT
+      USER_IDS: ${{ secrets.USER_IDS }}  # 从仓库的 secrets 中获取 USER_IDS
+      START_DATE: ${{ secrets.START_DATE }}  # 从仓库的 secrets 中获取 START_DATE
+      NAME: ${{ secrets.NAME }}  # 从仓库的 secrets 中获取 NAME
+      BIRTHDAY: ${{ secrets.BIRTHDAY }}  # 从仓库的 secrets 中获取 BIRTHDAY
+      CITY: ${{ secrets.CITY }}  # 从仓库的 secrets 中获取 CITY
