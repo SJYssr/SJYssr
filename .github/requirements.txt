@@ -1,3 +1,4 @@
 lunardate==0.2.2
 wechatpy==1.8.18
-requests==2.31.0 
+requests==2.31.0
+cryptography==41.0.7 
