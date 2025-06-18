@@ -19,7 +19,7 @@ birthday = '2006-10-30'
 app_id = "wx95dccc37f9d0c4bd"
 app_secret = "2c20d3e3d7ae087e5ddeeb4b9c3989ad"
 # 微信公众号的user_id,多个用;（分号）隔开
-user_ids = "oPSU1vujN9iObbmtzcb9_5NY-vAE"
+user_ids = "oPSU1vgEVTTp3UwaPiyNAh76yfEw"
 # 白天模板id
 template_id_day = "8Mh3QtfqTKsmzR1K63Ne00yrfU241l2llcANXY_ZF1g"
 # 晚上模板id
