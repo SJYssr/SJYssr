@@ -1,4 +1,4 @@
-name: 小彤天气预报推送  # 工作流名称，表示这是一个用于微信天气预报推送的工作流
+name: 刘心雨天气预报推送  # 工作流名称，表示这是一个用于微信天气预报推送的工作流
 
 on:
   schedule:  # 定时触发器，用于在特定时间自动运行工作流
@@ -34,7 +34,7 @@ jobs:
 
     - name: Run weather  # 步骤名称，运行天气预报脚本
       run: |  # 运行以下命令
-        python ${{ github.workspace }}/.github/xiaotong.py  # 使用完整路径运行脚本
+        python ${{ github.workspace }}/.github/liuxinyu.py  # 使用完整路径运行脚本
 
     env:  # 设置环境变量
       APP_KEY: ${{ secrets.APP_KEY }}  # 从仓库的 secrets 中获取 APP_KEY
