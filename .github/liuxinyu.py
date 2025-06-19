@@ -36,7 +36,7 @@ template_id_day = "o0QxpC5ExASiJ--qABuwoTREYN9QFzll7lld3av3qRg"
 # 晚上模板id
 template_id_night = "06OHmx7AoYK29J94VUP0XJq2dh_eoMCVCm1KbyPDhjc"
 # 呢称
-name = '师靖宇'
+name = '刘心雨'
 # 城市
 city = '郑州'
 
