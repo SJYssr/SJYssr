@@ -1,46 +1,56 @@
-name: 课程提醒  # 工作流名称，用于课程提醒推送
+name: 课程提醒
 
 on:
-  schedule:  # 定时触发器
+  schedule:
     - cron: '45 23 * * *'  # 7:45 北京时间
-    - cron: '45 1 * * *'   # 9:45 北京时间  
+    - cron: '45 1 * * *'   # 9:45 北京时间
     - cron: '45 4 * * *'   # 12:45 北京时间
     - cron: '45 6 * * *'   # 14:45 北京时间
     - cron: '40 8 * * *'   # 16:40 北京时间
     - cron: '55 10 * * *'  # 18:55 北京时间
-  workflow_dispatch:  # 手动触发器
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  kebiao-push:
     runs-on: ubuntu-latest
     name: 课程提醒推送
-
     steps:
-    - name: checkout
-      uses: actions/checkout@v3
-      with:
-        ref: main
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: main
 
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
+      - name: Show environment variables (for debug)
+        run: |
+          echo "APP_ID: ${{ secrets.APP_ID }}"
+          echo "APP_SECRET: ${{ secrets.APP_SECRET }}"
+          echo "TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}"
+          echo "USER_IDS: ${{ secrets.USER_IDS }}"
+          echo "NAME: ${{ secrets.NAME }}"
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r ${{ github.workspace }}/.github/requirements.txt
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Run course reminder
-      run: |
-        python ${{ github.workspace }}/.github/kebiao.py
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install wechatpy requests pytz
 
-    env:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_SECRET: ${{ secrets.APP_SECRET }}
-      TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-      USER_IDS: ${{ secrets.USER_IDS }}
-      NAME: ${{ secrets.NAME }}
+      - name: List .github directory (debug)
+        run: |
+          ls -l ${{ github.workspace }}/.github/
+
+      - name: Run course reminder
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+          USER_IDS: ${{ secrets.USER_IDS }}
+          NAME: ${{ secrets.NAME }}
+        run: |
+          python ${{ github.workspace }}/.github/kebiao.py
