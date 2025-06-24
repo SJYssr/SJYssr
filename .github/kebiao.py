@@ -7,11 +7,11 @@ import os
 import pytz
 
 # 微信公众号配置
-app_id = os.environ.get('APP_ID', "wx95dccc37f9d0c4bd")
-app_secret = os.environ.get('APP_SECRET', "2c20d3e3d7ae087e5ddeeb4b9c3989ad")
-user_ids = os.environ.get('USER_IDS', "oPSU1vujN9iObbmtzcb9_5NY-vAE")
-template_id = os.environ.get('TEMPLATE_ID', "hdmwdmpgA_r8uo6Du8lEXm0baXY-9GRTA161ZKRi5AE")
-name = os.environ.get('NAME', '师靖宇')
+app_id = "wx95dccc37f9d0c4bd"
+app_secret = "2c20d3e3d7ae087e5ddeeb4b9c3989ad"
+user_ids = "oPSU1vujN9iObbmtzcb9_5NY-vAE"
+template_id = "hdmwdmpgA_r8uo6Du8lEXm0baXY-9GRTA161ZKRi5AE"
+name = '师靖宇'
 
 # 学期配置
 SEMESTER_START = datetime(2025,6,16)  # 学期开始时间
