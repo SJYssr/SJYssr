@@ -6,8 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+SJYssr%F0%9F%98%8A;A+passionate+developer+%F0%9F%92%BB;Always+learning+%F0%9F%93%9A;And+improving+%F0%9F%9A%80" alt="Typing SVG" />
 
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=SJYssr&style=for-the-badge&color=blueviolet&label=Visitors" alt="Visitors" />
-  <img src="https://img.shields.io/github/followers/SJYssr?style=for-the-badge&color=blue&label=Followers" alt="Followers" />
   <img src="https://img.shields.io/github/last-commit/SJYssr/SJYssr?label=Last%20Update&style=for-the-badge&color=blueviolet" alt="Last Update" />
 </div>
 
@@ -19,9 +17,6 @@
   <br/>
   <img src="https://github-readme-stats.vercel.app/api?username=SJYssr&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&bg_color=0D1117" height="150" alt="stats graph" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SJYssr&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&bg_color=0D1117" height="150" alt="languages graph" />
-
-  <br/>
-  <img src="https://streak-stats.demolab.com?user=SJYssr&theme=dark&hide_border=false&background=0D1117" alt="GitHub Streak" />
 </div>
 
 ## 📈 Commit Activity
