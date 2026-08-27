@@ -17,7 +17,7 @@
 <div align="center">
   <img src="https://img.shields.io/github/stars/SJYssr?style=for-the-badge&color=yellow&label=%E2%98%85%20Total%20Stars" alt="Stars" />
   <img src="https://img.shields.io/github/repo-count/SJYssr?style=for-the-badge&color=green&label=%E2%96%A0%20Repositories" alt="Repos" />
-  <img src="https://img.shields.io/github/commit-activity/m/SJYssr/CX_Kitty?style=for-the-badge&color=orange&label=%E2%86%91%20Commits%20(30d)" alt="Commits" />
+  <img src="https://img.shields.io/github/commit-activity/m/SJYssr/CX_EXAM_python?style=for-the-badge&color=orange&label=%E2%86%91%20Commits%20(30d)" alt="Commits" />
 
   <br/><br/>
   <img src="https://streak-stats.demolab.com?user=SJYssr&theme=dark&hide_border=false&background=0D1117" alt="GitHub Streak" />
@@ -47,10 +47,12 @@
 
 <div align="center">
 
-| Project | Description | Status |
+| Project | Description | Stars |
 |:-------:|:-----------:|:------:|
-| <a href="https://github.com/SJYssr/CX_Kitty"><b>CX_Kitty</b></a> | 超星学习通自动化工具 | <img src="https://img.shields.io/github/stars/SJYssr/CX_Kitty?style=social" alt="Stars" /> <img src="https://img.shields.io/github/last-commit/SJYssr/CX_Kitty?label=updated&color=blueviolet" alt="Updated" /> |
-| <a href="https://github.com/SJYssr/auth-system"><b>auth-system</b></a> | 卡密授权管理系统 | <img src="https://img.shields.io/github/stars/SJYssr/auth-system?style=social" alt="Stars" /> <img src="https://img.shields.io/github/last-commit/SJYssr/auth-system?label=updated&color=blueviolet" alt="Updated" /> |
+| <a href="https://github.com/SJYssr/CX_EXAM_python"><b>CX_EXAM_python</b></a> | 某星学习通考试客户端题库（霸屏软件）搜题 - Python 版本 | <img src="https://img.shields.io/github/stars/SJYssr/CX_EXAM_python?style=social" alt="Stars" /> |
+| <a href="https://github.com/SJYssr/LOL_auto_runA"><b>LOL_auto_runA</b></a> | LOL 走 A 脚本 | <img src="https://img.shields.io/github/stars/SJYssr/LOL_auto_runA?style=social" alt="Stars" /> |
+| <a href="https://github.com/SJYssr/Cx_EXAM"><b>Cx_EXAM</b></a> | 某星学习通考试客户端（霸屏软件）搜题 - 易语言版本 | <img src="https://img.shields.io/github/stars/SJYssr/Cx_EXAM?style=social" alt="Stars" /> |
+| <a href="https://github.com/SJYssr/WatcherCheate"><b>WatcherCheate</b></a> | 指定窗口反截屏程序 | <img src="https://img.shields.io/github/stars/SJYssr/WatcherCheate?style=social" alt="Stars" /> |
 
 </div>
 
