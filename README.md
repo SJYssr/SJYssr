@@ -31,6 +31,14 @@
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white" alt="Vue.js" />
 </div>
 
+## 🛠️ My Skills
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?perline=20&i=js,html,css,bash,git,yarn,windows,webpack,vite,vscode,ts,tailwind,svg,sqlite,react,postman,pnpm,pinia,php,ps,npm,nodejs,nginx,mysql,md,linux,github,arch,babel,bootstrap,c,cpp,clion,cloudflare,codepen,docker,express" alt="My Skills" />
+  </a>
+</div>
+
 ## 📈 Commit Activity
 
 <div align="center">
