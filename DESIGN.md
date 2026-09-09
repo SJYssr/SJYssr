@@ -62,17 +62,16 @@ All external images must use reliable, widely-available services:
 - **Shields.io** (`img.shields.io`) — Reliable static and dynamic badges
 - **Readme Typing SVG** (`readme-typing-svg.demolab.com`) — Typing animation
 - **Streak Stats** (`streak-stats.demolab.com`) — Contribution streak
-- **Activity Graph** (`github-readme-activity-graph.vercel.app`) — Contribution graph
 - **Komarev** (`komarev.com/ghpvc/`) — Visitor counter
-- **Capsule Render** (`capsule-render.vercel.app`) — Header wave animation
+- **Skillicons** (`skillicons.dev`) — Tech stack icon grid
+- **jsDelivr** (`cdn.jsdelivr.net`) — Reliable GitHub file CDN
 
 ## Sections
 
-1. **Header** — Wave animation, animated typing text, key status badges
+1. **Header** — Animated typing text, key status badges
 2. **GitHub Stats** — Stars, repos, commits badges + streak stats
-3. **Tech Stack** — Programming language badges in a tight row
-4. **Commit Activity** — Activity graph visualization
-5. **Contribution Graph** — Snake animation
-6. **Projects** — Key projects with descriptions and status badges
-7. **About Me** — Bio, education, interests
-8. **Footer** — Signature with link
+3. **My Skills** — Skillicons technology grid
+4. **Contribution Graph** — Snake animation served from jsDelivr
+5. **Projects** — Key projects with descriptions and status badges
+6. **About Me** — Bio, education, interests
+7. **Footer** — Signature with link

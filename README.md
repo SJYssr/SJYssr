@@ -16,19 +16,11 @@
 
 <div align="center">
   <img src="https://img.shields.io/github/stars/SJYssr?style=for-the-badge&color=yellow&label=%E2%98%85%20Total%20Stars" alt="Stars" />
-  <img src="https://img.shields.io/github/repo-count/SJYssr?style=for-the-badge&color=green&label=%E2%96%A0%20Repositories" alt="Repos" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FSJYssr&query=public_repos&style=for-the-badge&color=green&label=%E2%96%A0%20Repositories" alt="Repos" />
   <img src="https://img.shields.io/github/commit-activity/m/SJYssr/CX_EXAM_python?style=for-the-badge&color=orange&label=%E2%86%91%20Commits%20(30d)" alt="Commits" />
 
   <br/><br/>
   <img src="https://streak-stats.demolab.com?user=SJYssr&theme=dark&hide_border=false&background=0D1117" alt="GitHub Streak" />
-
-  <br/><br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white" alt="Vue.js" />
 </div>
 
 ## 🛠️ My Skills
@@ -39,16 +31,10 @@
   </a>
 </div>
 
-## 📈 Commit Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SJYssr&theme=github-compact&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" />
-</div>
-
 ## 🐍 Contribution Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/SJYssr/SJYssr/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://cdn.jsdelivr.net/gh/SJYssr/SJYssr@output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
 
 ## 🚀 Projects
